@@ -35,7 +35,7 @@ if @user
       redirect '/users/home'
     end
     redirect '/sessions/login'
-  end  end
+   end
 
   get '/sessions/logout' do 
     session.clear
