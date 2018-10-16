@@ -3,7 +3,7 @@ class ApplicationController < Sinatra::Base
   set :views, Proc.new { File.join(root, "../views/") }
 
   configure do
-    enable :sessions/login
+    enable :sessions
     set :session_secret, "secret"
   end
 
